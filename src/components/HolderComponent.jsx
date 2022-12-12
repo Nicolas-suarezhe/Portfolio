@@ -34,7 +34,7 @@ const HolderComponent = () => {
 
             <div className='holder' >
 
-                <div className='biggest-box' >
+                <div className='biggest-box'>
                     <div className='holder-title' >
                         <img className='my-logo' src={images.myLogo} alt="" />
                     </div>

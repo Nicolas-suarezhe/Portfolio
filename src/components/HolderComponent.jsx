@@ -49,7 +49,7 @@ const HolderComponent = () => {
                                         </div>
                                 </div>
                                 <div className='image-space'>
-                                    <img className='my-photo' src={images.foto} alt="" />
+                                    <img className='my-photo' src={images.myFoto} alt="" />
                                 </div>
                             </div>
                             <div className='quote-container' >

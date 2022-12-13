@@ -195,7 +195,7 @@ body{
 
 /* ------ QUERYS ------ */
 
-@media screen and (max-width:380px){
+@media screen and (max-width:550px){
 
   *{
     margin: 0;

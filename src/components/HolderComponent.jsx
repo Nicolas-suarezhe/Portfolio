@@ -34,7 +34,6 @@ const HolderComponent = () => {
                         <img className='my-logo' src={images.myLogo} alt="" />
                     </div>
                     <div className='box-container'>
-                        <div className='icon-img-quote' >
                             <div className='icon-img'>
                                 <div className='left-info' >
                                         <div className="images-icons">
@@ -52,8 +51,6 @@ const HolderComponent = () => {
                                     Here there's gonna be a beautiful quote
                                 </p>
                             </div>
-                        </div>
-                        <div className='detail-and-btn'>
                             <div className='detail-holder' >
                                 {page === 0 && 'hi'}
                                 {page === 1 && <DetailInfo/>}
@@ -65,9 +62,8 @@ const HolderComponent = () => {
                                 <button onClick={openPageInfo} className='options-btn' >About me</button>
                                 <button onClick={openPageSoft} className='options-btn' >Soft skills</button>
                                 <button onClick={openPageHard} className='options-btn' >Hard skills</button>
-                                <button onClick={openPageExp} className='options-btn' >My experience</button>
+                                <button onClick={openPageExp} className='options-btn' >My work</button>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div className='holder-footer' >

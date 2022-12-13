@@ -54,11 +54,15 @@ body{
 }
 
 .box-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
   height: 70vh;
   width: 100vw;
+  grid-template-columns: 40vw 60vw ;
+  grid-template-rows: 60vh 10vh ;
+  grid-template-areas: 
+  "icon-img detail-holder"
+  "quote-container all-btn-space"
+  ;
 }
 
 .holder-footer{
@@ -79,18 +83,12 @@ body{
   align-items: center;
 }
 
-.icon-img-quote{
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-  height: 70vh;
-}
-
 .icon-img{
   display: flex;
   flex-direction: row;
   width: 40vw;
   height: 60vh;
+  grid-area: icon-img;
 }
 
 .quote-container{
@@ -99,6 +97,7 @@ body{
   display: flex;
   justify-content: start;
   align-items: center;
+  grid-area: quote-container;
 }
 
 .quote{
@@ -108,7 +107,8 @@ body{
   border-left: 2px solid #61dbfb;
   color: #dbd8e3;
   height: 6vh;
-  width: 35vw;
+  width: 30vw;
+  margin-left: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,32 +138,24 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32vw;
+  width: 27vw;
   height: 60vh;
 }
 
 .my-photo{
-  width: 32vw;
+  width: 27vw;
   height: fit-content;
   border-radius: 50%;
-}
-
-.detail-and-btn{
-  width: 50vw;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
 }
 
 .detail-holder{
   background-color: #5c5470;
   border-radius: 8px;
   border-left: 2px solid #61dbfb;
-  width: 50vw;
+  width: 55vw;
   height: 60vh;
   overflow-y: auto;
+  grid-area: detail-holder;
 }
 
 .all-btn-space{
@@ -172,7 +164,8 @@ body{
   align-items: center;
   gap: 1rem;
   height: 10vh;
-  width: 50vw;
+  width: 55vw;
+  grid-area: all-btn-space;
 }
 
 .social-icons{
@@ -200,6 +193,8 @@ body{
 }
 
 
+/* ------ QUERYS ------ */
+
 @media screen and (max-width:380px){
 
   *{
@@ -211,7 +206,7 @@ body{
 
   .biggest-box{
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
   }
 
   .holder-title{
@@ -231,25 +226,33 @@ body{
     height: 70vh;
     width: 100vw;
     position: relative;
+    grid-template-columns: 40vw 60vw ;
+    grid-template-rows: 36vh 24vh 10vh ;
+    grid-template-areas: 
+    "icon-img detail-holder"
+    "quote-container detail-holder"
+    "all-btn-space all-btn-space"
+    ;
   }
 
   .holder-footer{
     height: 15vh;
+    width: 100vw;
   }
 
-  .icon-img-quote{
-    height: 70vh;
-    width: 40vw;
+  .footer{
+    width: 90vw;
   }
 
   .icon-img{
     display: flex;
     flex-direction: column;
-    height: 48vh;
+    height: 36vh;
+    width: 40vw;
   }
 
   .image-space{
-    width: 40vw;
+    width: 42vw;
   }
 
   .my-photo{
@@ -273,16 +276,17 @@ body{
   }
 
   .quote-container{
-    height: 12vh;
+    height: 24vh;
     width: 40vw;
     display: flex;
     justify-content: end;
     align-items: center;
+    grid-area: quote-container;
   }
 
   .quote{
-    height: 12vh;
-    width: 35vw;
+    height: 24vh;
+    width: 36vw;
   }
 
   .detail-and-btn{
@@ -292,14 +296,19 @@ body{
 
   .detail-holder{
     height: 60vh;
-    width: 50vw;
+    width: 60vw;
   }
 
   .all-btn-space{
     position: relative;
-    width: 90vw;
+    width: 100vw;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .options-btn{
+    width: 18.75vw;
   }
 
 }

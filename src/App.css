@@ -195,7 +195,17 @@ body{
 
 /* ------ QUERYS ------ */
 
-@media screen and (max-width:550px){
+/* ------ QUERYS ------ */
+
+/* ------ QUERYS ------ */
+
+/* ------ QUERYS ------ */
+
+/* ------ QUERYS ------ */
+
+/* ------ QUERYS ------ */
+
+@media screen and ( max-width:490px){
 
   *{
     margin: 0;
@@ -226,6 +236,8 @@ body{
     height: 70vh;
     width: 100vw;
     position: relative;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 40vw 60vw ;
     grid-template-rows: 36vh 24vh 10vh ;
     grid-template-areas: 
@@ -265,11 +277,12 @@ body{
     height: 6vh;
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .images-icons{
-    width: 35vw;
+    width: 30vw;
+    margin-right: 5vw;
     height: 6vh;
     display: flex;
     flex-direction: row;
@@ -286,7 +299,8 @@ body{
 
   .quote{
     height: 24vh;
-    width: 36vw;
+    width: 31vw;
+    margin-right: 5vw;
   }
 
   .detail-and-btn{
@@ -296,23 +310,146 @@ body{
 
   .detail-holder{
     height: 60vh;
-    width: 60vw;
+    width: 55vw;
   }
 
   .all-btn-space{
     position: relative;
+    width: 90vw;
+    margin: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .options-btn{
+    width: 20vw;
+  }
+
+
+
+}
+
+
+@media screen and (min-width:491px) and (max-width:800px){
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+
+  .biggest-box{
+    width: 100vw;
+    height: 85vh;
+  }
+
+  .holder-title{
+    height: 15vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .options-btn{
-    width: 18.75vw;
+  .my-logo{
+    height: 12vh;
+    width: auto;
   }
 
-}
+  .box-container{
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 40vw 60vw ;
+    grid-template-rows: 48vh 12vh 10vh ;
+    grid-template-areas: 
+    "icon-img detail-holder"
+    "quote-container detail-holder"
+    "all-btn-space all-btn-space"
+    ;
+  }
 
-@media screen and (min-width:380px) and ( max-width:600px){
+  .holder-footer{
+    height: 15vh;
+    width: 100vw;
+  }
+
+  .footer{
+    width: 90vw;
+  }
+
+  .icon-img{
+    display: flex;
+    flex-direction: column;
+    height: 48vh;
+    width: 40vw;
+  }
+
+  .image-space{
+    width: 42vw;
+  }
+
+  .my-photo{
+    width: 40vw;
+    height: auto;
+  }
+
+  .left-info{
+    width: 40vw;
+    height: 6vh;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+
+  .images-icons{
+    width: 30vw;
+    margin-right: 5vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .quote-container{
+    height: 12vh;
+    width: 40vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-area: quote-container;
+  }
+
+  .quote{
+    height: 12vh;
+    width: 31vw;
+    margin-right: 5vw;
+  }
+
+  .detail-and-btn{
+    height: 70vh;
+    width: 60vw;
+  }
+
+  .detail-holder{
+    height: 60vh;
+    width: 55vw;
+  }
+
+  .all-btn-space{
+    position: relative;
+    width: 90vw;
+    margin: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .options-btn{
+    width: 20vw;
+  }
 
 }

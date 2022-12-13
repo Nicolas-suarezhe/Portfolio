@@ -28,12 +28,7 @@ const HolderComponent = () => {
 
         
         <div>
-            <div className='back'>
-
-            </div>
-
             <div className='holder' >
-
                 <div className='biggest-box'>
                     <div className='holder-title' >
                         <img className='my-logo' src={images.myLogo} alt="" />

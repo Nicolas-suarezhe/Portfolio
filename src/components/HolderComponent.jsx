@@ -22,21 +22,40 @@ const HolderComponent = () => {
         setPage(4)
     }
 
+    const darkMode = ()=>{
+        setTheme('dark')
+        setDarkModeBtn('nonvisible')
+        setLightModeBtn('visible')
+    }
+    const lightMode = ()=>{
+        setTheme('light')
+        setLightModeBtn('nonvisible')
+        setDarkModeBtn('visible')
+    }
+
+    const [theme , setTheme] = useState('dark')
+    const [darkModeBtn , setDarkModeBtn] = useState('visible')
+    const [lightModeBtn , setLightModeBtn] = useState('nonvisible')
+
 
     return (
 
 
         
         <div>
-            <div className='holder' >
+            <div className='holder' id={theme}>
                 <div className='biggest-box'>
                     <div className='holder-title' >
                         <img className='my-logo' src={images.myLogo} alt="" />
+                        <div>
+                            <button className={darkModeBtn} onClick={darkMode} >Dark</button>
+                            <button className={lightModeBtn} onClick={lightMode}>Light</button>
+                        </div>
                     </div>
                     <div className='box-container'>
                             <div className='icon-img'>
                                 <div className='left-info' >
-                                        <div className="images-icons">
+                                        <div className="images-icons box">
                                             <img className='social-icons' src={images.insta} alt="" />
                                             <img className='social-icons' src={images.linked} alt="" />
                                             <img className='social-icons' src={images.wpp} alt="" />
@@ -47,11 +66,11 @@ const HolderComponent = () => {
                                 </div>
                             </div>
                             <div className='quote-container' >
-                                <p className='quote' >
-                                    Here there's gonna be a beautiful quote
+                                <p className='quote box' >
+                                    I'm a full stack web developer
                                 </p>
                             </div>
-                            <div className='detail-holder' >
+                            <div className='detail-holder box' >
                                 {page === 0 && 'hi'}
                                 {page === 1 && <DetailInfo/>}
                                 {page === 2 && <SkillsInfo/>}
@@ -59,15 +78,15 @@ const HolderComponent = () => {
                                 {page === 4 && <ExpInfo/>}
                             </div>
                             <div className='all-btn-space' >
-                                <button onClick={openPageInfo} className='options-btn' >About me</button>
-                                <button onClick={openPageSoft} className='options-btn' >Soft skills</button>
-                                <button onClick={openPageHard} className='options-btn' >Hard skills</button>
-                                <button onClick={openPageExp} className='options-btn' >My work</button>
+                                <button onClick={openPageInfo} className='options-btn box' >About me</button>
+                                <button onClick={openPageSoft} className='options-btn box' >Soft skills</button>
+                                <button onClick={openPageHard} className='options-btn box' >Hard skills</button>
+                                <button onClick={openPageExp} className='options-btn box' >My work</button>
                             </div>
                     </div>
                 </div>
                 <div className='holder-footer' >
-                    <div className='footer' >
+                    <div className='footer box' >
                         This is going to be the footer
                     </div>
                 </div>

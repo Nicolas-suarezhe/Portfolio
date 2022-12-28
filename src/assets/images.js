@@ -4,7 +4,7 @@ import wpp from './images/whatsapp.png'
 import myLogo from './images/loguito.png'
 import reactBack from './images/reactback.jpeg'
 import myFoto from './images/foto-definitiva.png'
-import insta from './/images/intagram.png'
+import insta from './/images/instagram.png'
 
 export default {
     foto,

@@ -4,7 +4,10 @@
   text-align: center;
   box-sizing: border-box;
   height: 100%;
+  --lightBG: #8f8f8f;
+  --darkBG: #353535;
 }
+
 
 *{
   margin: 0;
@@ -14,8 +17,40 @@
   font-size: 1rem;
 }
 
+#light{
+  background-color: var(--lightBG);
+}
+
+#dark{
+  background-color: var(--darkBG);
+}
+
+.visible{
+  display: block;
+  background-color: #dbd8e3;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  border-left: 2px solid #61dbfb;
+  color: #49474c;
+  z-index: 3;
+  height: 6vh;
+  width: 11vw;
+}
+
+.nonvisible{
+  display: none;
+}
+
+.box{
+  background-color: #dbd8e3;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  border-left: 2px solid #61dbfb;
+  color: #49474c;
+  z-index: 2;
+}
+
 body{
-  color: #dbd8e3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +81,7 @@ body{
   height: 15vh;
   width: auto;
   margin: 5vh 0px 5vh 0px;
+  z-index: 2;
 }
 
 .my-name{
@@ -73,11 +109,8 @@ body{
 }
 
 .footer{
-  background-color: #5c5470;
-  border-radius: 8px;
   height: 10vh;
   width: 90vw;
-  border-left: 2px solid #61dbfb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,11 +134,6 @@ body{
 }
 
 .quote{
-  background-color: #5c5470;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  border-left: 2px solid #61dbfb;
-  color: #dbd8e3;
   height: 6vh;
   width: 30vw;
   margin-left: 5vw;
@@ -123,15 +151,12 @@ body{
 }
 
 .images-icons{
-  background-color: #5c5470;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 60vh;
   width: 8vw;
-  border-radius: 8px;
-  border-left: 2px solid #61dbfb;
 }
 
 .image-space{
@@ -146,12 +171,10 @@ body{
   width: 27vw;
   height: fit-content;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .detail-holder{
-  background-color: #5c5470;
-  border-radius: 8px;
-  border-left: 2px solid #61dbfb;
   width: 55vw;
   height: 60vh;
   overflow-y: auto;
@@ -173,11 +196,6 @@ body{
 }
 
 .options-btn{
-  background-color: #5c5470;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  border-left: 2px solid #61dbfb;
-  color: #dbd8e3;
   height: 6vh;
   width: 11vw;
 }

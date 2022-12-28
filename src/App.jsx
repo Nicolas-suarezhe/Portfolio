@@ -1,15 +1,16 @@
 import './App.css'
 import HolderComponent from './components/HolderComponent'
-import ParticlesBackground from './components/ParticlesBackground'
+import Particles from './components/Particles'
 
 
 function App() {
 
+
   return (
-    <div className="App">
-      <ParticlesBackground></ParticlesBackground>
-      <HolderComponent/>
-    </div>
+      <div className="App">
+        <HolderComponent/>
+        <Particles></Particles>
+      </div>
   )
 }
 

@@ -4,7 +4,8 @@ import wpp from './images/whatsapp.png'
 import myLogo from './images/loguito.png'
 import reactBack from './images/reactback.jpeg'
 import myFoto from './images/foto-definitiva.png'
-import insta from './/images/instagram.png'
+import insta from './images/instagram.png'
+import darkLight from './images/dark-light.png'
 
 export default {
     foto,
@@ -13,5 +14,6 @@ export default {
     wpp,
     myLogo,
     reactBack,
-    myFoto
+    myFoto,
+    darkLight
 }

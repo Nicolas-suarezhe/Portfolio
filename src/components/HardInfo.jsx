@@ -2,7 +2,7 @@ import React from 'react';
 
 const HardInfo = () => {
     return (
-        <div>
+        <div className='interior-info' >
             <p className='text-big' >
                 Here you can see the HARD SKILLS info 
             </p>

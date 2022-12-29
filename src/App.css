@@ -4,8 +4,8 @@
   text-align: center;
   box-sizing: border-box;
   height: 100%;
-  --lightBG: #8f8f8f;
-  --darkBG: #353535;
+  --lightBG: #bfb6a0;
+  --darkBG: #212121;
 }
 
 
@@ -27,14 +27,25 @@
 
 .visible{
   display: block;
-  background-color: #dbd8e3;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  border-left: 2px solid #61dbfb;
-  color: #49474c;
-  z-index: 3;
+  height: 5vh;
+  width: 5vh;
+  transition-duration: 700ms;
+}
+.visible:hover{
+  height: 7vh;
+  width: 7vh;
+}
+
+.darkmodeicon{
+  height: 4vh;
+  width: 4vh;
+  transition-duration: 700ms;
+}
+
+.darkmodeicon:hover{
   height: 6vh;
-  width: 11vw;
+  width: 6vh;
+  transform: rotate(180deg);
 }
 
 .nonvisible{
@@ -42,10 +53,10 @@
 }
 
 .box{
-  background-color: #dbd8e3;
+  background-color: #ffffff;
   border-radius: 8px;
   border: 1px solid transparent;
-  border-left: 2px solid #61dbfb;
+  border-left: 2px solid #a3a3a3;
   color: #49474c;
   z-index: 2;
 }
@@ -73,6 +84,7 @@ body{
   height: 15vh;
   width: 90vw;
   display: flex;
+  z-index: 1;
   justify-content: space-between;
   align-items: center;
 }
@@ -198,10 +210,14 @@ body{
 .options-btn{
   height: 6vh;
   width: 11vw;
+  transition-duration: 700ms;
+  transition-timing-function: ease-in-out;
 }
 
 .options-btn:hover{
   cursor: pointer;
+  height: 8vh;
+  width: 8vw;
 }
 
 

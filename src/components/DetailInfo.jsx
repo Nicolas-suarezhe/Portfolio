@@ -2,7 +2,7 @@ import React from 'react';
 
 const DetailInfo = () => {
     return (
-        <div>
+        <div className='interior-info' >
             <p className='text-big' >
                 Here you can see more info ABOUT ME
             </p>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillsInfo = () => {
     return (
-        <div>
+        <div className='interior-info' >
             <p className='text-big' >
                 Here you can see the SOFT SKILLS info 
             </p>

@@ -23,7 +23,7 @@ const options = useMemo(()=>{
             },
             modes:{
                 push:{
-                    quantity: 20
+                    quantity: 5
                 },
                 repulse:{
                     distance: 100

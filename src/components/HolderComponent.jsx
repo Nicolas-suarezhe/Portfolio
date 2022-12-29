@@ -23,23 +23,25 @@ const HolderComponent = () => {
     }
 
     const darkMode = ()=>{
-        setTheme('dark')
-        setDarkModeBtn('nonvisible')
-        setLightModeBtn('visible')
+        if(theme === 'dark'){
+            setTheme('light')
+        }else{
+            setTheme('dark')
+        }
+
     }
-    const lightMode = ()=>{
-        setTheme('light')
-        setLightModeBtn('nonvisible')
-        setDarkModeBtn('visible')
-    }
+    // const lightMode = ()=>{
+    //     setTheme('light')
+    //     setLightModeBtn('box nonvisible')
+    //     setDarkModeBtn('box visible')
+    // }
 
     const [theme , setTheme] = useState('dark')
-    const [darkModeBtn , setDarkModeBtn] = useState('visible')
-    const [lightModeBtn , setLightModeBtn] = useState('nonvisible')
+    // const [darkModeBtn , setDarkModeBtn] = useState('box visible')
+    // const [lightModeBtn , setLightModeBtn] = useState('box visible')
 
 
     return (
-
 
         
         <div>
@@ -48,8 +50,8 @@ const HolderComponent = () => {
                     <div className='holder-title' >
                         <img className='my-logo' src={images.myLogo} alt="" />
                         <div>
-                            <button className={darkModeBtn} onClick={darkMode} >Dark</button>
-                            <button className={lightModeBtn} onClick={lightMode}>Light</button>
+                            <button className='box visible' onClick={darkMode} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
+                            {/* <button className={lightModeBtn} onClick={lightMode}>Light</button> */}
                         </div>
                     </div>
                     <div className='box-container'>

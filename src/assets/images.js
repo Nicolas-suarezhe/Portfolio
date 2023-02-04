@@ -6,14 +6,17 @@ import reactBack from './images/reactback.jpeg'
 import myFoto from './images/foto-definitiva.png'
 import insta from './images/instagram.png'
 import darkLight from './images/dark-light.png'
+import git from './images/git.png'
 
-export default {
-    foto,
-    insta,
-    linked,
-    wpp,
-    myLogo,
-    reactBack,
-    myFoto,
-    darkLight
+const images = {
+    foto: foto,
+    insta: insta,
+    linked: linked,
+    wpp: wpp,
+    myLogo: myLogo,
+    reactBack: reactBack,
+    myFoto: myFoto,
+    darkLight: darkLight,
+    git: git
 }
+export default images

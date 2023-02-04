@@ -1,37 +1,20 @@
 import React from 'react';
+import projects from '../assets/projects';
 
 const ExpInfo = () => {
     return (
         <div className='interior-info' >
-            <p className='text-big' >
-                Here you can see the EXPERIENCE info 
-            </p>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
-            <h2>My exprience</h2>
-            <h3>Nicolas</h3>
+            <h1>
+                These are the projects I have worked on: 
+            </h1>
+            { projects.map(project => (
+                        <div className="project-card">
+                            <h1>{project.name}</h1>
+                            <img className='project-image' src={project.image} alt="" />
+                        </div>
+                    ))}
+            <p>My exprience</p>
+            <p>Nicolas</p>
         </div>
     );
 };

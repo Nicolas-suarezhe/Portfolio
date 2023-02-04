@@ -51,16 +51,21 @@ const HolderComponent = () => {
                         <img className='my-logo' src={images.myLogo} alt="" />
                         <div>
                             <button className='box visible' onClick={darkMode} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
-                            {/* <button className={lightModeBtn} onClick={lightMode}>Light</button> */}
                         </div>
                     </div>
                     <div className='box-container'>
                             <div className='icon-img'>
                                 <div className='left-info' >
                                         <div className="images-icons box">
-                                            <img className='social-icons' src={images.insta} alt="" />
-                                            <img className='social-icons' src={images.linked} alt="" />
-                                            <img className='social-icons' src={images.wpp} alt="" />
+                                            <a href="https://www.youtube.com" target='_blank' >
+                                                <img className='social-icons' src={images.insta} alt="" />
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/suarez-henao-nicolas-alejandro-b516aa249/" target='_blank' >
+                                                <img className='social-icons' src={images.linked} alt="" />
+                                            </a>
+                                            <a href="https://github.com/Nicolas-suarezhe" target='_blank' >
+                                                <img className='social-icons' src={images.git} alt="" />
+                                            </a>
                                         </div>
                                 </div>
                                 <div className='image-space'>

@@ -29,7 +29,8 @@
   display: block;
   height: 5vh;
   width: 5vh;
-  transition-duration: 700ms;
+  transition: height 400ms
+  width 400ms;
 }
 .visible:hover{
   height: 7vh;
@@ -39,7 +40,7 @@
 .darkmodeicon{
   height: 4vh;
   width: 4vh;
-  transition-duration: 700ms;
+  transition-duration: 400ms;
 }
 
 .darkmodeicon:hover{
@@ -210,20 +211,25 @@ body{
 .options-btn{
   height: 6vh;
   width: 11vw;
-  transition-duration: 700ms;
-  transition-timing-function: ease-in-out;
+  transition: height 400ms,
+  width 400ms;
 }
 
 .options-btn:hover{
   cursor: pointer;
   height: 8vh;
   width: 18vw;
-}
+} 
 
 
 .paragraph{
   writing-mode: vertical-rl;
   text-orientation: upright;
+}
+
+.project-image{
+  height: 100px ;
+  width: 100px;
 }
 
 

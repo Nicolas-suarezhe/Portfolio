@@ -192,6 +192,8 @@ body{
   height: 60vh;
   overflow-y: auto;
   grid-area: detail-holder;
+  justify-content: center;
+  align-items: center;
 }
 
 .all-btn-space{

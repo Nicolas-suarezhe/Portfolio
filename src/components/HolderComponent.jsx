@@ -57,7 +57,7 @@ const HolderComponent = () => {
                             <div className='icon-img'>
                                 <div className='left-info' >
                                         <div className="images-icons box">
-                                            <a href="https://www.youtube.com" target='_blank' >
+                                            <a href="https://instagram.com/nsuarezhe?igshid=MDM4ZDc5MmU=" target='_blank' >
                                                 <img className='social-icons' src={images.insta} alt="" />
                                             </a>
                                             <a href="https://www.linkedin.com/in/suarez-henao-nicolas-alejandro-b516aa249/" target='_blank' >
@@ -78,7 +78,9 @@ const HolderComponent = () => {
                                 </p>
                             </div>
                             <div className='detail-holder box' >
-                                {page === 0 && 'hi'}
+                                {page === 0 && 
+                                    <h1 className='welcome-message' > MY NAME IS NICOLÁS SUÁREZ AND I AM LOOKING FOWARD TO WORK WITH YOU </h1>
+                                }
                                 {page === 1 && <DetailInfo/>}
                                 {page === 2 && <SkillsInfo/>}
                                 {page === 3 && <HardInfo/>}

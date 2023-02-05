@@ -206,14 +206,46 @@ body{
   grid-area: all-btn-space;
 }
 
+.social-icons-div{
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+}
+
+.colored-si{
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 400ms linear;
+}
+
 .social-icons{
   width: 5vw;
+  opacity: 1;
+  transition: opacity 400ms linear;
+}
+
+a:hover .social-icons{
+  visibility: hidden;
+  opacity: 0;
+  transition: visible 400ms linear
+  opacity 400ms linear;
+}
+
+a:hover .colored-si{
+  visibility: visible;
+  opacity: 1;
+  transition: visible 400ms linear
+  opacity 400ms linear;
+
 }
 
 .options-btn{
   height: 6vh;
   width: 11vw;
-  transition: height 400ms,
+  transition: 
+  height 400ms,
   width 400ms;
 }
 
@@ -232,6 +264,17 @@ body{
 .project-image{
   height: 100px ;
   width: 100px;
+}
+
+.interior-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-big{
+  width: 40vw;
 }
 
 

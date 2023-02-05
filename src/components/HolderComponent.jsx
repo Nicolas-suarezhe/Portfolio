@@ -4,6 +4,7 @@ import ExpInfo from './ExpInfo';
 import HardInfo from './HardInfo';
 import SkillsInfo from './SkillsInfo';
 import images from '../assets/images.js'
+import WelcomeMessage from './WelcomeMessage';
 
 const HolderComponent = () => {
 
@@ -58,13 +59,24 @@ const HolderComponent = () => {
                                 <div className='left-info' >
                                         <div className="images-icons box">
                                             <a href="https://instagram.com/nsuarezhe?igshid=MDM4ZDc5MmU=" target='_blank' >
-                                                <img className='social-icons' src={images.insta} alt="" />
+                                                <div className='social-icons-div'>
+                                                    <img className='social-icons insta-icon' src={images.insta} alt="" />
+                                                    <img className='social-icons colored-si' src={images.instacolor} alt="" />
+                                                </div>
                                             </a>
                                             <a href="https://www.linkedin.com/in/suarez-henao-nicolas-alejandro-b516aa249/" target='_blank' >
-                                                <img className='social-icons' src={images.linked} alt="" />
+                                                <div className='social-icons-div' >
+                                                    <img className='social-icons linked-icon' src={images.linked} alt="" />
+                                                    <img className='social-icons colored-si' src={images.linkedcolor} alt="" />
+                                                </div>
+
                                             </a>
                                             <a href="https://github.com/Nicolas-suarezhe" target='_blank' >
-                                                <img className='social-icons' src={images.git} alt="" />
+                                                <div className='social-icons-div' >
+                                                    <img className='social-icons git-icon' src={images.git} alt="" />
+                                                    <img className='social-icons colored-si' src={images.gitcolor} alt="" />
+                                                </div>
+
                                             </a>
                                         </div>
                                 </div>
@@ -78,9 +90,7 @@ const HolderComponent = () => {
                                 </p>
                             </div>
                             <div className='detail-holder box' >
-                                {page === 0 && 
-                                    <h1 className='welcome-message' > MY NAME IS NICOLÁS SUÁREZ AND I AM LOOKING FOWARD TO WORK WITH YOU </h1>
-                                }
+                                {page === 0 && <WelcomeMessage/>}
                                 {page === 1 && <DetailInfo/>}
                                 {page === 2 && <SkillsInfo/>}
                                 {page === 3 && <HardInfo/>}

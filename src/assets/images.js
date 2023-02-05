@@ -7,16 +7,23 @@ import myFoto from './images/foto-definitiva.png'
 import insta from './images/instagram.png'
 import darkLight from './images/dark-light.png'
 import git from './images/git.png'
+import gitcolor from './images/gitcolor.png'
+import instacolor from './images/instacolor.png'
+import linkedcolor from './images/linkedcolor.png'
 
 const images = {
-    foto: foto,
-    insta: insta,
-    linked: linked,
-    wpp: wpp,
-    myLogo: myLogo,
-    reactBack: reactBack,
-    myFoto: myFoto,
-    darkLight: darkLight,
-    git: git
+    foto,
+    insta,
+    linked,
+    wpp,
+    myLogo,
+    reactBack,
+    myFoto,
+    darkLight,
+    git,
+    gitcolor,
+    instacolor,
+    linkedcolor
+
 }
 export default images

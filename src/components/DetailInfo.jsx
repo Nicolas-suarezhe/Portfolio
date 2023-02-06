@@ -4,6 +4,8 @@ const DetailInfo = () => {
     return (
         <div className='interior-info' >
             <br />
+            <br />
+            <br />
             <h1>A little bit more about me</h1>
             <br />
             <p className='text-big' >

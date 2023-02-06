@@ -1,37 +1,59 @@
 import React from 'react';
+import images from '../assets/images';
 
 const HardInfo = () => {
     return (
         <div className='interior-info' >
-            <p className='text-big' >
-                Here you can see the HARD SKILLS info 
-            </p>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
-            <h2>My hard skills</h2>
-            <h3>Nicolas</h3>
+            <br />
+            <br />
+            <br />
+            <h1>This are my top hard skills</h1>
+            <br />
+            <div className='text-big' >
+                Here you can see the hard skills I have used the most and can be relevant to projects you may have in mind.
+            </div>
+            <div className='hard-skills-info' >
+                <div className='skill-detail' >
+                    <br />
+                    <h2>React</h2>
+                    <img src={images.react} alt="" className='skill-image' />
+                </div>
+                <div className='skill-detail' >
+                    <br />
+                    <h2>Node</h2>
+                    <img src={images.node} alt="" className='skill-image' />
+                </div>
+                <div className='skill-detail' >
+                    <br />
+                    <h2>HTML</h2>
+                    <img src={images.html} alt="" className='skill-image' />
+                </div>
+                <div className='skill-detail' >
+                    <br />
+                    <h2>CSS</h2>
+                    <img src={images.css} alt="" className='skill-image' />
+                </div>
+                <div className='skill-detail' >
+                    <br />
+                    <h2>Sequelize</h2>
+                    <img src={images.seque} alt="" className='skill-image' />
+                </div>
+                <div className='skill-detail' >
+                    <br />
+                    <h2>JavaScript</h2>
+                    <img src={images.js} alt="" className='skill-image' />
+                </div>
+                <div className='skill-detail' >
+                    <br />
+                    <h2>Redux</h2>
+                    <img src={images.redux} alt="" className='skill-image' />
+                </div>
+                <div className='skill-detail' >
+                    <br />
+                    <h2>react-router-dom</h2>
+                    <img src={images.rrd} alt="" className='skill-image'/>
+                </div>
+            </div>
         </div>
     );
 };

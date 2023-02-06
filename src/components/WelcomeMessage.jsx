@@ -2,8 +2,15 @@ import React from 'react';
 
 const WelcomeMessage = () => {
     return (
-        <div>
-            <h1>this is a welcome</h1>
+        <div className='interior-info' >
+            <br />
+            <br />
+            <br />
+            <h1>Welcome to my portfolio</h1>
+            <br />
+            <p className='text-big' >
+                If you're watching this page, you may be interested in working with me, please make sure to go through all the details and see the great asset I can be to any company.
+            </p>
         </div>
     );
 };

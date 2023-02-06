@@ -11,6 +11,16 @@ import gitcolor from './images/gitcolor.png'
 import instacolor from './images/instacolor.png'
 import linkedcolor from './images/linkedcolor.png'
 
+import js from './images/js.png'
+import node from './images/node.png'
+import redux from './images/redux.png'
+import rrd from './images/rrd.png'
+import seque from './images/sequelize.png'
+import html from './images/html-5.png'
+import css from './images/css-3.png'
+import react from './images/react.png'
+
+
 const images = {
     foto,
     insta,
@@ -23,7 +33,14 @@ const images = {
     git,
     gitcolor,
     instacolor,
-    linkedcolor
-
+    linkedcolor,
+    js,
+    node,
+    redux,
+    rrd,
+    seque,
+    html,
+    css,
+    react
 }
 export default images

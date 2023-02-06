@@ -206,6 +206,15 @@ body{
   grid-area: all-btn-space;
 }
 
+
+
+
+
+
+
+
+
+
 .social-icons-div{
   width: 5vw;
   height: 5vw;
@@ -214,32 +223,52 @@ body{
 
 .colored-si{
   position: absolute;
-  right: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 400ms linear;
+  left: 0;
+  height: 0;
+  animation-name: out;
+  animation-duration: 50ms;
 }
 
 .social-icons{
   width: 5vw;
   opacity: 1;
-  transition: opacity 400ms linear;
+  transition: opacity 400ms ease-in-out;
 }
 
-a:hover .social-icons{
+@keyframes entering{
+  0% {height: 0;}
+  50% {height: 2.5vw;}
+  100% {height: 5vw;}
+}
+@keyframes out{
+  0% {height: 5vw;}
+  50% {height: 2.5vw;}
+  100% {height: 0;}
+}
+
+
+/* a:hover .social-icons{
   visibility: hidden;
   opacity: 0;
   transition: visible 400ms linear
   opacity 400ms linear;
-}
+} */
 
 a:hover .colored-si{
-  visibility: visible;
-  opacity: 1;
-  transition: visible 400ms linear
-  opacity 400ms linear;
-
+  animation-name: entering;
+  animation-duration: 50ms;
+  background-color: white;
+  height: 5vw;
 }
+
+
+
+
+
+
+
+
+
 
 .options-btn{
   height: 6vh;
@@ -277,6 +306,23 @@ a:hover .colored-si{
   width: 40vw;
 }
 
+.hard-skills-info{
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-detail{
+  width: 16vw;
+  height: 15vh;
+  background-color: var(--lightBG);
+  margin: 1rem;
+}
+
+.skill-image{
+  width: 4vw;
+}
 
 /* ------ QUERYS ------ */
 

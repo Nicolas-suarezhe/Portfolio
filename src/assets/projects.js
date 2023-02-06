@@ -19,7 +19,6 @@ const projects = [
         name: "Shutterstock",
         image: {insta}
     }
-
 ]
 
 export default projects

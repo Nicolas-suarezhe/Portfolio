@@ -318,6 +318,7 @@ a:hover .colored-si{
   height: 15vh;
   background-color: var(--lightBG);
   margin: 1rem;
+  border-radius: 4px;
 }
 
 .skill-image{
@@ -344,6 +345,16 @@ a:hover .colored-si{
 .skill-used-img{
   width: 1.2vw;
 }
+
+.project-description{
+  font-size: small;
+}
+
+.span{
+  font-weight: 700;
+  text-shadow: 3px 3px 3px #ccc;
+}
+
 
 /* ------ QUERYS ------ */
 

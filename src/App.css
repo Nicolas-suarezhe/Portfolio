@@ -324,6 +324,27 @@ a:hover .colored-si{
   width: 4vw;
 }
 
+.project-detail{
+  width: 30vw;
+  height: 20vh;
+  background-color: var(--lightBG);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.text-and-skills{
+  display: flex;
+}
+
+.project-image{
+  width: 10vw;
+}
+
+.skill-used-img{
+  width: 1.2vw;
+}
+
 /* ------ QUERYS ------ */
 
 /* ------ QUERYS ------ */

@@ -7,7 +7,7 @@ const HardInfo = () => {
             <br />
             <br />
             <br />
-            <h1>This are my top hard skills</h1>
+            <h1>These are my top hard skills</h1>
             <br />
             <div className='text-big' >
                 Here you can see the hard skills I have used the most and can be relevant to projects you may have in mind.

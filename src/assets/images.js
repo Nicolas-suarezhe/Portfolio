@@ -20,6 +20,11 @@ import html from './images/html-5.png'
 import css from './images/css-3.png'
 import react from './images/react.png'
 
+import chinitaSS from './images/chinitaSS.png'
+import pokedexSS from './images/pokedexSS.png'
+import rickSS from './images/rickandmortySS.png'
+import freelancer from './images/freelancerSS.png'
+
 
 const images = {
     foto,
@@ -41,6 +46,10 @@ const images = {
     seque,
     html,
     css,
-    react
+    react,
+    chinitaSS,
+    pokedexSS,
+    rickSS,
+    freelancer
 }
 export default images

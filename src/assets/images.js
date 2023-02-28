@@ -25,6 +25,8 @@ import pokedexSS from './images/pokedexSS.png'
 import rickSS from './images/rickandmortySS.png'
 import freelancer from './images/freelancerSS.png'
 
+import check from './images/cheque.png'
+
 
 const images = {
     foto,
@@ -50,6 +52,8 @@ const images = {
     chinitaSS,
     pokedexSS,
     rickSS,
-    freelancer
+    freelancer,
+
+    check
 }
 export default images

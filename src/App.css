@@ -355,6 +355,38 @@ a:hover .colored-si{
   text-shadow: 3px 3px 3px #ccc;
 }
 
+.form{
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 40vw;
+}
+
+.labels{
+  position: relative;
+  top: 6px;
+  right: 35vw;
+  color: black;
+  background-color: #ffffff;
+}
+
+.input-space{
+  width: 40vw;
+  border: 2px solid var(--darkBG) ; 
+  border-radius: 8px;
+}
+
+.check{
+  width: 5vw;
+}
+
+.div-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ------ QUERYS ------ */
 

@@ -5,10 +5,15 @@ import HardInfo from './HardInfo';
 import SkillsInfo from './SkillsInfo';
 import images from '../assets/images.js'
 import WelcomeMessage from './WelcomeMessage';
+import ContactInfo from './ContactInfo';
 
 const HolderComponent = () => {
 
     const [ page , setPage ] = useState(0)
+
+    const openPageContact = ()=>{
+        setPage(5)
+    }
 
     const openPageInfo = ()=>{
         setPage(1)
@@ -95,6 +100,7 @@ const HolderComponent = () => {
                                 {page === 2 && <SkillsInfo/>}
                                 {page === 3 && <HardInfo/>}
                                 {page === 4 && <ExpInfo/>}
+                                {page === 5 && <ContactInfo/>}
                             </div>
                             <div className='all-btn-space' >
                                 <button onClick={openPageInfo} className='options-btn box' >About me</button>
@@ -104,10 +110,13 @@ const HolderComponent = () => {
                             </div>
                     </div>
                 </div>
-                <div className='holder-footer' >
-                    <div className='footer box' >
-                        This is going to be the footer
-                    </div>
+                <div className='footer-contact' >
+                        <div className='holder-footer' >
+                            <div onClick={openPageContact} className='footer box' >
+                                ¡Clic here to contact with me!
+                            </div>
+                        </div>
+                    
                 </div>
             </div>
 

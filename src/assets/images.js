@@ -1,31 +1,40 @@
-import foto from './images/foto.jpeg'
-import linked from './images/linkedin.png'
-import wpp from './images/whatsapp.png'
-import myLogo from './images/loguito.png'
-import reactBack from './images/reactback.jpeg'
-import myFoto from './images/foto-definitiva.png'
-import insta from './images/instagram.png'
-import darkLight from './images/dark-light.png'
-import git from './images/git.png'
-import gitcolor from './images/gitcolor.png'
-import instacolor from './images/instacolor.png'
-import linkedcolor from './images/linkedcolor.png'
+import foto from './images/generic/foto.jpeg'
+import linked from './images/generic/linkedin.png'
+import wpp from './images/generic/whatsapp.png'
+import myLogo from './images/generic/loguito.png'
+import reactBack from './images/generic/reactback.jpeg'
+import myFoto from './images/generic/foto-definitiva.png'
+import insta from './images/generic/instagram.png'
+import darkLight from './images/generic/dark-light.png'
+import git from './images/generic/git.png'
+import gitcolor from './images/generic/gitcolor.png'
+import instacolor from './images/generic/instacolor.png'
+import linkedcolor from './images/generic/linkedcolor.png'
+import check from './images/generic/cheque.png'
 
-import js from './images/js.png'
-import node from './images/node.png'
-import redux from './images/redux.png'
-import rrd from './images/rrd.png'
-import seque from './images/sequelize.png'
-import html from './images/html-5.png'
-import css from './images/css-3.png'
-import react from './images/react.png'
+import js from './images/hardskillsimages/js.png'
+import node from './images/hardskillsimages/node.png'
+import redux from './images/hardskillsimages/redux.png'
+import rrd from './images/hardskillsimages/rrd.png'
+import seque from './images/hardskillsimages/sequelize.png'
+import html from './images/hardskillsimages/html-5.png'
+import css from './images/hardskillsimages/css-3.png'
+import react from './images/hardskillsimages/react.png'
 
-import chinitaSS from './images/chinitaSS.png'
-import pokedexSS from './images/pokedexSS.png'
-import rickSS from './images/rickandmortySS.png'
-import freelancer from './images/freelancerSS.png'
+import leader from './images/softskillsimages/leadership.png'
+import assertive from './images/softskillsimages/group.png'
+import detail from './images/softskillsimages/report.png'
+import attentive from './images/softskillsimages/listening.png'
+import solve from './images/softskillsimages/problem-solving.png'
+import knowledge from './images/softskillsimages/open-book.png'
+import team from './images/softskillsimages/partners.png'
+import adapt from './images/softskillsimages/adapt.png'
 
-import check from './images/cheque.png'
+import chinitaSS from './images/projects/chinitaSS.png'
+import pokedexSS from './images/projects/pokedexSS.png'
+import rickSS from './images/projects/rickandmortySS.png'
+import freelancer from './images/projects/freelancerSS.png'
+
 
 
 const images = {
@@ -54,6 +63,15 @@ const images = {
     rickSS,
     freelancer,
 
-    check
+    check,
+
+    leader,
+    assertive,
+    detail,
+    attentive,
+    solve,
+    knowledge,
+    team,
+    adapt
 }
 export default images

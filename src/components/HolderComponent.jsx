@@ -36,16 +36,8 @@ const HolderComponent = () => {
         }
 
     }
-    // const lightMode = ()=>{
-    //     setTheme('light')
-    //     setLightModeBtn('box nonvisible')
-    //     setDarkModeBtn('box visible')
-    // }
 
     const [theme , setTheme] = useState('dark')
-    // const [darkModeBtn , setDarkModeBtn] = useState('box visible')
-    // const [lightModeBtn , setLightModeBtn] = useState('box visible')
-
 
     return (
 

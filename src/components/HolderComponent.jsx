@@ -47,7 +47,8 @@ const HolderComponent = () => {
                 <div className='biggest-box'>
                     <div className='holder-title' >
                         <img className='my-logo' src={images.myLogo} alt="" />
-                        <div>
+                        <div className='changer-btns' >
+                            <button className='box visible' onClick={darkMode} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
                             <button className='box visible' onClick={darkMode} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
                         </div>
                     </div>
@@ -83,7 +84,7 @@ const HolderComponent = () => {
                             </div>
                             <div className='quote-container' >
                                 <p className='quote box' >
-                                    I'm a full stack web developer
+                                    Download my CV HERE
                                 </p>
                             </div>
                             <div className='detail-holder box' >
@@ -105,7 +106,10 @@ const HolderComponent = () => {
                 <div className='footer-contact' >
                         <div className='holder-footer' >
                             <div onClick={openPageContact} className='footer box' >
-                                ¡Clic here to contact with me!
+                                ¡Clic here to e-mail with me!
+                            </div>
+                            <div onClick={openPageContact} className='wpp-btn box' >
+                                <img className='insta-icon social-icons' src={images.insta} alt="" />
                             </div>
                         </div>
                     

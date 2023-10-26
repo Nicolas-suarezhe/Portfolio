@@ -29,24 +29,22 @@
   display: block;
   height: 5vh;
   width: 5vh;
-  transition: height 400ms
-  width 400ms;
+  transition-duration: 400ms;
 }
 .visible:hover{
   height: 7vh;
   width: 7vh;
+  transition-duration: 400ms;
+}
+
+.changer-btns{
+  display: flex;
 }
 
 .darkmodeicon{
   height: 4vh;
   width: 4vh;
   transition-duration: 400ms;
-}
-
-.darkmodeicon:hover{
-  height: 6vh;
-  width: 6vh;
-  transform: rotate(180deg);
 }
 
 .nonvisible{
@@ -117,16 +115,22 @@ body{
 .holder-footer{
   height: 15vh;
   width: 100vw;
+  padding: 0vw 5vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .footer{
   height: 10vh;
-  width: 90vw;
+  width: 75.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.wpp-btn{
+  height: 10vh;
+  width: 11vw;
 }
 
 .icon-img{

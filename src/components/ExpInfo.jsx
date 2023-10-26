@@ -85,6 +85,7 @@ const ExpInfo = () => {
                                 <img src={images.rrd} alt="" className='skill-used-img' />
                                 <img src={images.css} alt="" className='skill-used-img' />
                                 <img src={images.redux} alt="" className='skill-used-img' />
+                                <img src={images.node} alt="" className='skill-used-img' />
                             </div>
                         </div>
                     </div>

@@ -4,10 +4,9 @@
   text-align: center;
   box-sizing: border-box;
   height: 100%;
-  --lightBG: #bfb6a0;
+  --lightBG: #efd298;
   --darkBG: #212121;
 }
-
 
 *{
   margin: 0;
@@ -31,6 +30,7 @@
   width: 5vh;
   transition-duration: 400ms;
 }
+
 .visible:hover{
   height: 7vh;
   width: 7vh;
@@ -122,15 +122,10 @@ body{
 
 .footer{
   height: 10vh;
-  width: 75.5vw;
+  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.wpp-btn{
-  height: 10vh;
-  width: 11vw;
 }
 
 .icon-img{
@@ -148,9 +143,10 @@ body{
   justify-content: start;
   align-items: center;
   grid-area: quote-container;
+  text-decoration: none;
 }
 
-.quote{
+.CVdownload{
   height: 6vh;
   width: 30vw;
   margin-left: 5vw;
@@ -210,19 +206,44 @@ body{
   grid-area: all-btn-space;
 }
 
-
-
-
-
-
-
-
-
-
 .social-icons-div{
   width: 5vw;
   height: 5vw;
   position: relative;
+}
+
+.pulse{
+  height: 5vw;
+  width: 5vw;
+  background-color: transparent;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.pulse::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.pulse::before{
+  animation: pulse 2s ease-out infinite;
+}
+
+.pulse:after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+
+@keyframes pulse{
+  100%{
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }
 
 .colored-si{
@@ -250,29 +271,12 @@ body{
   100% {height: 0;}
 }
 
-
-/* a:hover .social-icons{
-  visibility: hidden;
-  opacity: 0;
-  transition: visible 400ms linear
-  opacity 400ms linear;
-} */
-
 a:hover .colored-si{
   animation-name: entering;
   animation-duration: 50ms;
   background-color: white;
   height: 5vw;
 }
-
-
-
-
-
-
-
-
-
 
 .options-btn{
   height: 6vh;
@@ -391,6 +395,12 @@ a:hover .colored-si{
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
 
 /* ------ QUERYS ------ */
 

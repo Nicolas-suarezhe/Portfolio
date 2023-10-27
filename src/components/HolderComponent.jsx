@@ -6,6 +6,7 @@ import SkillsInfo from './SkillsInfo';
 import images from '../assets/images.js'
 import WelcomeMessage from './WelcomeMessage';
 import ContactInfo from './ContactInfo';
+import cvs from '../assets/curriculums/cvs';
 
 const HolderComponent = () => {
 
@@ -56,10 +57,9 @@ const HolderComponent = () => {
                             <div className='icon-img'>
                                 <div className='left-info' >
                                         <div className="images-icons box">
-                                            <a href="https://instagram.com/nsuarezhe?igshid=MDM4ZDc5MmU=" target='_blank' >
-                                                <div className='social-icons-div'>
-                                                    <img className='social-icons insta-icon' src={images.insta} alt="" />
-                                                    <img className='social-icons colored-si' src={images.instacolor} alt="" />
+                                            <a href="https://api.whatsapp.com/send?phone=573108974714&text=%C2%A1Hola%20Nicol%C3%A1s!%20He%20visto%20tu%20portafolio%20y%20estoy%20interesado%20en%20hablar%20contigo." target='_blank' >
+                                                <div className='social-icons-div pulse'>
+                                                    <img className='social-icons wpp-icon' src={images.wppcolor} alt="" />
                                                 </div>
                                             </a>
                                             <a href="https://www.linkedin.com/in/suarez-henao-nicolas-alejandro-b516aa249/" target='_blank' >
@@ -82,11 +82,11 @@ const HolderComponent = () => {
                                     <img className='my-photo' src={images.myFoto} alt="" />
                                 </div>
                             </div>
-                            <div className='quote-container' >
-                                <p className='quote box' >
+                            <a href={cvs.encv} download className='quote-container' >
+                                <p className='CVdownload box' >
                                     Download my CV HERE
                                 </p>
-                            </div>
+                            </a>
                             <div className='detail-holder box' >
                                 {page === 0 && <WelcomeMessage/>}
                                 {page === 1 && <DetailInfo/>}
@@ -107,9 +107,6 @@ const HolderComponent = () => {
                         <div className='holder-footer' >
                             <div onClick={openPageContact} className='footer box' >
                                 ¡Clic here to e-mail with me!
-                            </div>
-                            <div onClick={openPageContact} className='wpp-btn box' >
-                                <img className='insta-icon social-icons' src={images.insta} alt="" />
                             </div>
                         </div>
                     

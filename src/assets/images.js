@@ -11,6 +11,7 @@ import gitcolor from './images/generic/gitcolor.png'
 import instacolor from './images/generic/instacolor.png'
 import linkedcolor from './images/generic/linkedcolor.png'
 import check from './images/generic/cheque.png'
+import wppcolor from './images/generic/wpp-logo.png'
 
 import js from './images/hardskillsimages/js.png'
 import node from './images/hardskillsimages/node.png'
@@ -38,6 +39,7 @@ import freelancer from './images/projects/freelancerSS.png'
 
 
 const images = {
+    wppcolor,
     foto,
     insta,
     linked,

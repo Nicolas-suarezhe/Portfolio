@@ -11,11 +11,9 @@ import cvs from '../assets/curriculums/cvs';
 const HolderComponent = () => {
 
     const [ page , setPage ] = useState(0)
-
-    const openPageContact = ()=>{
-        setPage(5)
+    const openInitial = ()=>{
+        setPage(0)
     }
-
     const openPageInfo = ()=>{
         setPage(1)
     }
@@ -28,6 +26,10 @@ const HolderComponent = () => {
     const openPageExp = ()=>{
         setPage(4)
     }
+    const openPageContact = ()=>{
+        setPage(5)
+    }
+
 
     const darkMode = ()=>{
         if(theme === 'dark'){
@@ -35,10 +37,39 @@ const HolderComponent = () => {
         }else{
             setTheme('dark')
         }
-
     }
 
+
     const [theme , setTheme] = useState('dark')
+
+
+
+    const changeLanguaje =()=>{
+        if(currLanguaje == 'spanish'){
+            setCurrLanguaje('english')
+        }else{
+            setCurrLanguaje('spanish')
+        }
+    }
+    const [currLanguaje, setCurrLanguaje] = useState('spanish')
+    const content = {
+        english:{
+            download:'Download my CV HERE',
+            firstP:'About me',
+            secondP:'Soft skills',
+            thirdP:'Hard skills',
+            fourthP:'My work',
+            emailme:'¡Clic here to e-mail me!'
+        },
+        spanish:{
+            download:'Descarga mi CV acá',
+            firstP:'Acerca de mí',
+            secondP:'Habilidades blandas',
+            thirdP:'Habilidades técnicas',
+            fourthP:'Mi trabajo',
+            emailme:'¡Clic acá para enviarme un e-mail!'
+        }
+    }
 
     return (
 
@@ -47,9 +78,9 @@ const HolderComponent = () => {
             <div className='holder' id={theme}>
                 <div className='biggest-box'>
                     <div className='holder-title' >
-                        <img className='my-logo' src={images.myLogo} alt="" />
+                        <img className='my-logo' src={images.myLogo} onClick={openInitial} alt="" />
                         <div className='changer-btns' >
-                            <button className='box visible' onClick={darkMode} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
+                            <button className='box visible' onClick={changeLanguaje} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
                             <button className='box visible' onClick={darkMode} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
                         </div>
                     </div>
@@ -79,12 +110,12 @@ const HolderComponent = () => {
                                         </div>
                                 </div>
                                 <div className='image-space'>
-                                    <img className='my-photo' src={images.myFoto} alt="" />
+                                    <img className='my-photo' onClick={openInitial} src={images.myFoto} alt="" />
                                 </div>
                             </div>
                             <a href={cvs.encv} download className='quote-container' >
                                 <p className='CVdownload box' >
-                                    Download my CV HERE
+                                    {content[currLanguaje].download}
                                 </p>
                             </a>
                             <div className='detail-holder box' >
@@ -96,17 +127,17 @@ const HolderComponent = () => {
                                 {page === 5 && <ContactInfo/>}
                             </div>
                             <div className='all-btn-space' >
-                                <button onClick={openPageInfo} className='options-btn box' >About me</button>
-                                <button onClick={openPageSoft} className='options-btn box' >Soft skills</button>
-                                <button onClick={openPageHard} className='options-btn box' >Hard skills</button>
-                                <button onClick={openPageExp} className='options-btn box' >My work</button>
+                                <button onClick={openPageInfo} className='options-btn box' >{content[currLanguaje].firstP}</button>
+                                <button onClick={openPageSoft} className='options-btn box' >{content[currLanguaje].secondP}</button>
+                                <button onClick={openPageHard} className='options-btn box' >{content[currLanguaje].thirdP}</button>
+                                <button onClick={openPageExp} className='options-btn box' >{content[currLanguaje].fourthP}</button>
                             </div>
                     </div>
                 </div>
                 <div className='footer-contact' >
                         <div className='holder-footer' >
                             <div onClick={openPageContact} className='footer box' >
-                                ¡Clic here to e-mail with me!
+                            {content[currLanguaje].emailme}
                             </div>
                         </div>
                     

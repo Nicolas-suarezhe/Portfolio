@@ -41,6 +41,7 @@ const ExpInfo = ({language}) => {
                 {content[language].description}
             </div>
             <div className='' >
+
                 <div className='project-detail' >
                     <h2 className='span' > {content[language].chinita} </h2>
                     <div className='text-and-skills' >
@@ -59,6 +60,7 @@ const ExpInfo = ({language}) => {
                         </div>
                     </div>
                 </div>
+
                 <div className='project-detail' >
                     <h2 className='span' >Rick & Morty wiki</h2>
                     <div className='text-and-skills' >
@@ -77,6 +79,7 @@ const ExpInfo = ({language}) => {
                         </div>
                     </div>
                 </div>
+
                 <div className='project-detail' >
                     <h2 className='span' >Pokedex</h2>
                     <div className='text-and-skills' >
@@ -95,6 +98,7 @@ const ExpInfo = ({language}) => {
                         </div>
                     </div>
                 </div>
+
                 <div className='project-detail' >
                     <h2 className='span' > {content[language].freelancerpro} </h2>
                     <div className='text-and-skills' >
@@ -114,6 +118,7 @@ const ExpInfo = ({language}) => {
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     );

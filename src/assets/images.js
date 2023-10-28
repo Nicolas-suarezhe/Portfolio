@@ -12,6 +12,7 @@ import instacolor from './images/generic/instacolor.png'
 import linkedcolor from './images/generic/linkedcolor.png'
 import check from './images/generic/cheque.png'
 import wppcolor from './images/generic/wpp-logo.png'
+import translate from './images/generic/traduccion.png'
 
 import js from './images/hardskillsimages/js.png'
 import node from './images/hardskillsimages/node.png'
@@ -52,6 +53,8 @@ const images = {
     gitcolor,
     instacolor,
     linkedcolor,
+    translate,
+    
     js,
     node,
     redux,

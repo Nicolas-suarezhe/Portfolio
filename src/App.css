@@ -153,6 +153,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .left-info{
@@ -190,7 +191,7 @@ body{
 .detail-holder{
   width: 55vw;
   height: 60vh;
-  overflow-y: auto;
+  overflow-y: auto; 
   grid-area: detail-holder;
   justify-content: center;
   align-items: center;

@@ -80,7 +80,7 @@ const HolderComponent = () => {
                     <div className='holder-title' >
                         <img className='my-logo' src={images.myLogo} onClick={openInitial} alt="" />
                         <div className='changer-btns' >
-                            <button className='box visible' onClick={changeLanguaje} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
+                            <button className='box visible' onClick={changeLanguaje} > <img className='darkmodeicon' src={images.translate} alt="" />  </button>
                             <button className='box visible' onClick={darkMode} > <img className='darkmodeicon' src={images.darkLight} alt="" />  </button>
                         </div>
                     </div>
@@ -113,18 +113,19 @@ const HolderComponent = () => {
                                     <img className='my-photo' onClick={openInitial} src={images.myFoto} alt="" />
                                 </div>
                             </div>
-                            <a href={cvs.encv} download className='quote-container' >
-                                <p className='CVdownload box' >
-                                    {content[currLanguaje].download}
-                                </p>
-                            </a>
+                            <div className='quote-container' >
+
+                                {currLanguaje === 'english' && <a href={cvs.encv} download className='CVdownload box' > {content[currLanguaje].download} </a>}
+                                {currLanguaje === 'spanish' && <a href={cvs.escv} download className='CVdownload box' > {content[currLanguaje].download} </a>}
+
+                            </div>
                             <div className='detail-holder box' >
-                                {page === 0 && <WelcomeMessage/>}
-                                {page === 1 && <DetailInfo/>}
-                                {page === 2 && <SkillsInfo/>}
-                                {page === 3 && <HardInfo/>}
-                                {page === 4 && <ExpInfo/>}
-                                {page === 5 && <ContactInfo/>}
+                                {page === 0 && <WelcomeMessage language={currLanguaje} />}
+                                {page === 1 && <DetailInfo language={currLanguaje} />}
+                                {page === 2 && <SkillsInfo language={currLanguaje} />}
+                                {page === 3 && <HardInfo language={currLanguaje} />}
+                                {page === 4 && <ExpInfo language={currLanguaje} />}
+                                {page === 5 && <ContactInfo language={currLanguaje} />}
                             </div>
                             <div className='all-btn-space' >
                                 <button onClick={openPageInfo} className='options-btn box' >{content[currLanguaje].firstP}</button>

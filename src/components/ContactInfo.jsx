@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import images from '../assets/images';
 
 const Result = () =>{
+
+
     return(
         <div className='div-form'>
             <div>
@@ -14,7 +16,7 @@ const Result = () =>{
     )
 }
 
-const ContactInfo = () => {
+const ContactInfo = ({language}) => {
   const form = useRef();
   const [result, showResult] = useState(false)
 
@@ -31,19 +33,37 @@ const ContactInfo = () => {
       showResult(true)
   };
 
+  const content ={
+    english:{
+      name:'Name',
+      email: 'Email',
+      message: 'Message',
+      send:'Send'
+    },
+    spanish:{
+      name:'Nombre',
+      email: 'Correo',
+      message: 'Mensaje',
+      send:'Enviar'
+    }
+  }
+
+
+
+
   return (
     <div className="div-form">
     <form ref={form} className="form" onSubmit={sendEmail}>
-      <label className='labels' >Name</label>
+      <label className='labels' > {content[language].name} </label>
       <input className='input-space' type="text" name="user_name" />
       <br />
-      <label className='labels' >Email</label>
+      <label className='labels' > {content[language].email} </label>
       <input className='input-space' type="email" name="user_email" />
       <br />
-      <label className='labels' >Message</label>
+      <label className='labels' > {content[language].message} </label>
       <textarea className='input-space' name="message" />
       <br />
-      <input className='box' type="submit" value="Send" />
+      <input className='box' type="submit" value={content[language].send} />
       <div className="divform">
       <div className="div-form"> {
                 result ? <Result/> : null

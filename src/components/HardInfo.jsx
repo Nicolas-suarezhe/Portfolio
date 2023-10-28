@@ -1,16 +1,29 @@
 import React from 'react';
 import images from '../assets/images';
 
-const HardInfo = () => {
+const HardInfo = ({language}) => {
+
+
+    const content = {
+        english:{
+            title:'These are my top hard skills',
+            description:'Here you can see the hard skills I have used the most and can be relevant to projects you may have in mind.'
+        },
+        spanish:{
+            title:'Estas son mis mejores habilidades técnicas',
+            description:'Acá verás las habilidades técnicas que más he usado y que pueden ser relevantes para los proyectos que tengas en mente'
+        }
+    }
+
     return (
         <div className='interior-info' >
             <br />
             <br />
             <br />
-            <h1 className='span' >These are my top hard skills</h1>
+            <h1 className='span' > {content[language]?.title} </h1>
             <br />
             <div className='text-big' >
-                Here you can see the hard skills I have used the most and can be relevant to projects you may have in mind.
+                {content[language]?.description}
             </div>
             <div className='hard-skills-info' >
                 <div className='skill-detail' >

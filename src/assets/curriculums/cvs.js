@@ -1,5 +1,5 @@
-import encv from './NicolasEn-CV.pdf'
-import escv from './NicolasES-CV.pdf'
+import encv from './NicolasEnCV.pdf'
+import escv from './NicolasESCV.pdf'
 
 const cvs = {
     encv,

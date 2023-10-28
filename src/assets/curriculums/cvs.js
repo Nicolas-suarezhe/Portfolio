@@ -1,5 +1,5 @@
-import encv from './NicolasEnCV.pdf'
-import escv from './NicolasESCV.pdf'
+import encv from './cv1.js'
+import escv from './cv2.js'
 
 const cvs = {
     encv,

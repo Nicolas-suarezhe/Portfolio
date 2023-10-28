@@ -51,7 +51,7 @@ const HolderComponent = () => {
             setCurrLanguaje('spanish')
         }
     }
-    const [currLanguaje, setCurrLanguaje] = useState('spanish')
+    const [currLanguaje, setCurrLanguaje] = useState('english')
     const content = {
         english:{
             download:'Download my CV HERE',
